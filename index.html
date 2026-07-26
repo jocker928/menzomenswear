@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MENZO Menswear — Made for Your Moment</title>
+  <meta name="description" content="Shop premium men's suits, shirts, occasion wear and everyday essentials from MENZO Menswear.">
+  <meta name="theme-color" content="#171713">
+  <link rel="canonical" href="https://www.menzomenswear.com/">
+  <meta property="og:title" content="MENZO Menswear — Made for Your Moment">
+  <meta property="og:description" content="Modern menswear, tailored for the way you move.">
+  <meta property="og:image" content="https://www.menzomenswear.com/menzo-hero.png">
+  <meta property="og:url" content="https://www.menzomenswear.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ClothingStore","name":"MENZO Menswear","url":"https://www.menzomenswear.com/","email":"hello@menzo.com","description":"Premium menswear for work, weddings and every day."}
+  </script>
+</head>
+<body>
+  <div class="announcement">Complimentary shipping across India on orders over ₹2,999</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="MENZO home">MENZO<span>MENSWEAR</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#new">New arrivals</a><a href="#collections">Collections</a><a href="#tailoring">Tailoring</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="bag-btn" id="bagBtn" aria-label="Shopping bag">Bag <span id="bagCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="menzo-hero.png" alt="Two MENZO models wearing elegant tailored suits">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">The Signature Edit · 2026</p>
+        <h1>Made for<br>your moment.</h1>
+        <p>Modern tailoring. Considered details. Confidence that carries from first look to last call.</p>
+        <div class="hero-actions"><a class="btn light" href="#new">Shop the collection</a><a class="text-link" href="#tailoring">Book a fitting <span>↗</span></a></div>
+      </div>
+      <div class="hero-index">01 / 03</div>
+    </section>
+
+    <section class="intro" id="story">
+      <p class="eyebrow dark">Dressed with intention</p>
+      <h2>Less noise. Better clothes.</h2>
+      <p class="intro-copy">We make enduring menswear for real life—precise cuts, premium fabrics and honest craftsmanship, designed in India.</p>
+      <div class="benefits">
+        <div><span>01</span><h3>Considered cloth</h3><p>Natural fibres and performance blends selected for comfort in the Indian climate.</p></div>
+        <div><span>02</span><h3>Modern proportion</h3><p>Clean silhouettes shaped to flatter, move and feel effortless all day.</p></div>
+        <div><span>03</span><h3>Personal service</h3><p>Alteration support and fit guidance online or at your nearest studio.</p></div>
+      </div>
+    </section>
+
+    <section class="shop" id="new">
+      <div class="section-heading"><div><p class="eyebrow dark">Just landed</p><h2>New arrivals</h2></div><a href="#collections">View all pieces →</a></div>
+      <div class="product-grid">
+        <article class="product">
+          <div class="product-visual suit-black"><span class="pill">New</span><div class="garment"><i></i></div></div>
+          <div class="product-info"><div><h3>Midnight Wool Blazer</h3><p>Italian wool blend · Slim fit</p></div><strong>₹8,990</strong></div>
+          <button class="add-btn" data-product="Midnight Wool Blazer">Quick add +</button>
+        </article>
+        <article class="product">
+          <div class="product-visual shirt-ivory"><div class="garment shirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Textured Ivory Shirt</h3><p>100% cotton · Regular fit</p></div><strong>₹2,490</strong></div>
+          <button class="add-btn" data-product="Textured Ivory Shirt">Quick add +</button>
+        </article>
+        <article class="product">
+          <div class="product-visual jacket-camel"><span class="pill">Bestseller</span><div class="garment overshirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Camel Utility Overshirt</h3><p>Cotton twill · Relaxed fit</p></div><strong>₹4,290</strong></div>
+          <button class="add-btn" data-product="Camel Utility Overshirt">Quick add +</button>
+        </article>
+        <article class="product">
+          <div class="product-visual polo-sage"><div class="garment polo"><i></i></div></div>
+          <div class="product-info"><div><h3>Sage Knit Polo</h3><p>Cotton–silk · Tailored fit</p></div><strong>₹3,290</strong></div>
+          <button class="add-btn" data-product="Sage Knit Polo">Quick add +</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <a class="collection formal" href="#new"><span>01</span><div><p>The occasion edit</p><h2>Own the room.</h2><b>Shop occasionwear →</b></div></a>
+      <a class="collection everyday" href="#new"><span>02</span><div><p>Everyday essentials</p><h2>Ease, refined.</h2><b>Shop smart casual →</b></div></a>
+    </section>
+
+    <section class="tailoring" id="tailoring">
+      <div class="tailor-art"><div class="measure m1">40</div><div class="measure m2">32</div><div class="jacket-line"></div></div>
+      <div class="tailor-copy"><p class="eyebrow">MENZO made-to-measure</p><h2>Your shape.<br>Your signature.</h2><p>From your first measurement to the final button, our specialists create a suit that belongs to you alone.</p><ul><li>40+ premium fabrics</li><li>Personal styling consultation</li><li>Ready in 21 days</li></ul><a class="btn light" href="mailto:hello@menzo.com?subject=Book%20a%20MENZO%20fitting">Book your consultation</a></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow dark">The MENZO list</p><h2>Good style, delivered.</h2><p>New collections, private previews and practical style notes. No clutter.</p>
+      <form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button type="submit">Join the list →</button></form>
+      <small id="formMessage">By subscribing, you agree to our privacy policy.</small>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main"><div><a class="brand footer-brand" href="#">MENZO<span>MENSWEAR</span></a><p>Menswear with intent.<br>Designed in India.</p></div><div class="footer-links"><div><h3>Shop</h3><a href="#new">New arrivals</a><a href="#collections">Suits & blazers</a><a href="#collections">Shirts</a><a href="#collections">Smart casual</a></div><div><h3>Help</h3><a href="mailto:hello@menzo.com">Contact us</a><a href="#tailoring">Fit guide</a><a href="#">Shipping & returns</a><a href="#">Care guide</a></div><div><h3>Follow</h3><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a></div></div></div>
+    <div class="footer-bottom"><span>© 2026 MENZO Menswear</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span><a href="mailto:hello@menzo.com">hello@menzo.com</a></div>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true"><button id="closeDrawer" aria-label="Close">×</button><p class="eyebrow dark">Your bag</p><h2>Selected pieces</h2><div id="bagItems"><p>Your bag is waiting.</p></div><div class="drawer-total"><span>Items</span><strong id="drawerCount">0</strong></div><button class="checkout" type="button">Checkout</button></aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="app.js"></script>
+</body>
+</html>
