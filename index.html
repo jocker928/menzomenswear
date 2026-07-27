@@ -27,6 +27,7 @@
       <a href="#new">New arrivals</a><a href="#collections">Collections</a><a href="#tailoring">Tailoring</a><a href="#story">Our story</a>
     </nav>
     <div class="header-actions">
+      <button class="account-btn" id="accountBtn">Login</button>
       <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
       <button class="bag-btn" id="bagBtn" aria-label="Shopping bag">Bag <span id="bagCount">0</span></button>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
@@ -61,24 +62,84 @@
       <div class="section-heading"><div><p class="eyebrow dark">Just landed</p><h2>New arrivals</h2></div><a href="#collections">View all pieces →</a></div>
       <div class="product-grid">
         <article class="product">
-          <div class="product-visual suit-black"><span class="pill">New</span><div class="garment"><i></i></div></div>
-          <div class="product-info"><div><h3>Midnight Wool Blazer</h3><p>Italian wool blend · Slim fit</p></div><strong>₹8,990</strong></div>
-          <button class="add-btn" data-product="Midnight Wool Blazer">Quick add +</button>
+          <div class="product-visual suit-photo"><span class="pill">Kasaragod Edit</span><img src="kasaragod-casual-look.png" alt="Model wearing blue jeans, a white T-shirt and a casual blue shirt"></div>
+          <div class="product-info"><div><h3>Mid-Blue Straight Jeans</h3><p>Comfort denim · Straight fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Mid-Blue Straight Jeans">Add to bag +</button><button class="buy-btn" data-product="Mid-Blue Straight Jeans">Buy now</button></div>
         </article>
         <article class="product">
-          <div class="product-visual shirt-ivory"><div class="garment shirt"><i></i></div></div>
-          <div class="product-info"><div><h3>Textured Ivory Shirt</h3><p>100% cotton · Regular fit</p></div><strong>₹2,490</strong></div>
-          <button class="add-btn" data-product="Textured Ivory Shirt">Quick add +</button>
+          <div class="product-visual suit-photo"><span class="pill">New</span><img src="product-blue-shirt.png" alt="Model wearing the sky blue casual cotton shirt"></div>
+          <div class="product-info"><div><h3>Sky Blue Casual Shirt</h3><p>100% cotton · Regular fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Sky Blue Casual Shirt">Add to bag +</button><button class="buy-btn" data-product="Sky Blue Casual Shirt">Buy now</button></div>
         </article>
         <article class="product">
-          <div class="product-visual jacket-camel"><span class="pill">Bestseller</span><div class="garment overshirt"><i></i></div></div>
-          <div class="product-info"><div><h3>Camel Utility Overshirt</h3><p>Cotton twill · Relaxed fit</p></div><strong>₹4,290</strong></div>
-          <button class="add-btn" data-product="Camel Utility Overshirt">Quick add +</button>
+          <div class="product-visual suit-photo"><span class="pill">Bestseller</span><img src="product-sand-tshirt.png" alt="Model wearing the sand oversized T-shirt"></div>
+          <div class="product-info"><div><h3>Sand Oversized T-Shirt</h3><p>Heavy cotton · Relaxed fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Sand Oversized T-Shirt">Add to bag +</button><button class="buy-btn" data-product="Sand Oversized T-Shirt">Buy now</button></div>
         </article>
         <article class="product">
-          <div class="product-visual polo-sage"><div class="garment polo"><i></i></div></div>
-          <div class="product-info"><div><h3>Sage Knit Polo</h3><p>Cotton–silk · Tailored fit</p></div><strong>₹3,290</strong></div>
-          <button class="add-btn" data-product="Sage Knit Polo">Quick add +</button>
+          <div class="product-visual suit-photo"><span class="pill">New</span><img src="product-cargo-shorts.png" alt="Model wearing olive cargo shorts and a white T-shirt"></div>
+          <div class="product-info"><div><h3>Olive Cargo Shorts</h3><p>Cotton twill · 6-pocket cut</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Olive Cargo Shorts">Add to bag +</button><button class="buy-btn" data-product="Olive Cargo Shorts">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual tee-black"><span class="pill">₹299 Deal</span><div class="garment tee"><i></i></div></div>
+          <div class="product-info"><div><h3>Classic Black Crew T-Shirt</h3><p>Combed cotton · Regular fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Classic Black Crew T-Shirt">Add to bag +</button><button class="buy-btn" data-product="Classic Black Crew T-Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual shirt-ivory"><span class="pill">₹299</span><div class="garment shirt"><i></i></div></div>
+          <div class="product-info"><div><h3>White Formal Shirt</h3><p>Easy-care cotton · Slim fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="White Formal Shirt">Add to bag +</button><button class="buy-btn" data-product="White Formal Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual suit-black"><span class="pill">₹299</span><div class="garment"><i></i></div></div>
+          <div class="product-info"><div><h3>Black Casual Pants</h3><p>Stretch fabric · Tapered cut</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Black Casual Pants">Add to bag +</button><button class="buy-btn" data-product="Black Casual Pants">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual jacket-camel"><span class="pill">₹299</span><div class="garment overshirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Checked Weekend Shirt</h3><p>Soft cotton · Comfort fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Checked Weekend Shirt">Add to bag +</button><button class="buy-btn" data-product="Checked Weekend Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual polo-sage"><span class="pill">₹299</span><div class="garment polo"><i></i></div></div>
+          <div class="product-info"><div><h3>Navy Everyday Polo</h3><p>Breathable cotton · Regular fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Navy Everyday Polo">Add to bag +</button><button class="buy-btn" data-product="Navy Everyday Polo">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual tee-black"><span class="pill">₹299</span><div class="garment tee"><i></i></div></div>
+          <div class="product-info"><div><h3>Maroon Graphic T-Shirt</h3><p>Soft jersey · Street fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Maroon Graphic T-Shirt">Add to bag +</button><button class="buy-btn" data-product="Maroon Graphic T-Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual suit-black"><span class="pill">₹299</span><div class="garment"><i></i></div></div>
+          <div class="product-info"><div><h3>Grey Slim Joggers</h3><p>Stretch knit · Ankle cut</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Grey Slim Joggers">Add to bag +</button><button class="buy-btn" data-product="Grey Slim Joggers">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual shirt-ivory"><span class="pill">₹299</span><div class="garment shirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Printed Resort Shirt</h3><p>Light rayon · Relaxed fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Printed Resort Shirt">Add to bag +</button><button class="buy-btn" data-product="Printed Resort Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual jacket-camel"><span class="pill">₹299</span><div class="garment overshirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Light Wash Denim Shorts</h3><p>Soft denim · Regular cut</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Light Wash Denim Shorts">Add to bag +</button><button class="buy-btn" data-product="Light Wash Denim Shorts">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual suit-black"><span class="pill">₹299</span><div class="garment"><i></i></div></div>
+          <div class="product-info"><div><h3>Black Formal Trousers</h3><p>Easy stretch · Slim cut</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Black Formal Trousers">Add to bag +</button><button class="buy-btn" data-product="Black Formal Trousers">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual polo-sage"><span class="pill">₹299</span><div class="garment polo"><i></i></div></div>
+          <div class="product-info"><div><h3>White Sports T-Shirt</h3><p>Quick dry · Active fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="White Sports T-Shirt">Add to bag +</button><button class="buy-btn" data-product="White Sports T-Shirt">Buy now</button></div>
+        </article>
+        <article class="product">
+          <div class="product-visual shirt-ivory"><span class="pill">₹299</span><div class="garment shirt"><i></i></div></div>
+          <div class="product-info"><div><h3>Olive Utility Shirt</h3><p>Cotton twill · Loose fit</p></div><strong>₹299</strong></div>
+          <div class="product-actions"><button class="add-btn" data-product="Olive Utility Shirt">Add to bag +</button><button class="buy-btn" data-product="Olive Utility Shirt">Buy now</button></div>
         </article>
       </div>
     </section>
@@ -102,11 +163,59 @@
 
   <footer>
     <div class="footer-main"><div><a class="brand footer-brand" href="#">MENZO<span>MENSWEAR</span></a><p>Menswear with intent.<br>Designed in India.</p></div><div class="footer-links"><div><h3>Shop</h3><a href="#new">New arrivals</a><a href="#collections">Suits & blazers</a><a href="#collections">Shirts</a><a href="#collections">Smart casual</a></div><div><h3>Help</h3><a href="mailto:hello@menzo.com">Contact us</a><a href="#tailoring">Fit guide</a><a href="#">Shipping & returns</a><a href="#">Care guide</a></div><div><h3>Follow</h3><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a></div></div></div>
-    <div class="footer-bottom"><span>© 2026 MENZO Menswear</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span><a href="mailto:hello@menzo.com">hello@menzo.com</a></div>
+    <div class="footer-bottom"><span>© 2026 MENZO Menswear</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span><div class="footer-contact"><a href="mailto:hello@menzo.com">hello@menzo.com</a><a href="https://wa.me/918867717777" target="_blank" rel="noopener">WhatsApp: +91 88677 17777</a><a href="https://wa.me/919037861312" target="_blank" rel="noopener">WhatsApp: +91 90378 61312</a></div></div>
   </footer>
 
-  <aside class="drawer" id="drawer" aria-hidden="true"><button id="closeDrawer" aria-label="Close">×</button><p class="eyebrow dark">Your bag</p><h2>Selected pieces</h2><div id="bagItems"><p>Your bag is waiting.</p></div><div class="drawer-total"><span>Items</span><strong id="drawerCount">0</strong></div><button class="checkout" type="button">Checkout</button></aside>
+  <div class="whatsapp">
+    <button class="whatsapp-toggle" id="whatsappToggle" aria-label="Contact MENZO on WhatsApp" aria-expanded="false">
+      <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 20l-2 6 6-2a13 13 0 1 0 7-24Zm0 23a10 10 0 0 1-5-1.4l-.5-.3-3.6 1.2 1.2-3.5-.3-.6A10 10 0 1 1 16 26Zm5.8-7.5c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.8-.9-3-1.7-4.2-3.8-.3-.6.3-.6.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.6-.5-.9-.5h-.7c-.2 0-.6.1-1 .5-1 1-.9 2.4-.8 2.7.1 2.8 2.4 5.4 4.8 7 2.4 1.6 5.8 2.5 7.2 1 .4-.4.8-1.5.8-2.1 0-.3-.2-.4-.5-.6Z"/></svg>
+    </button>
+    <div class="whatsapp-menu" id="whatsappMenu"><strong>Chat with MENZO</strong><span>Choose a WhatsApp number</span><a href="https://wa.me/918867717777?text=Hello%20MENZO%20Menswear%2C%20I%20need%20help." target="_blank" rel="noopener">+91 88677 17777 <b>→</b></a><a href="https://wa.me/919037861312?text=Hello%20MENZO%20Menswear%2C%20I%20need%20help." target="_blank" rel="noopener">+91 90378 61312 <b>→</b></a></div>
+  </div>
+
+  <section class="auth-modal" id="authModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="auth-close" id="authClose" aria-label="Close login">×</button>
+    <p class="eyebrow dark">MENZO account</p>
+    <h2 id="authTitle">Login or sign up</h2>
+    <p>Enter your email and we’ll send a secure one-time password.</p>
+    <form id="otpRequestForm"><label for="authEmail">Email address</label><input id="authEmail" type="email" placeholder="you@example.com" required><button type="submit">Send email OTP</button></form>
+    <form id="otpVerifyForm" hidden><label for="authOtp">6-digit OTP</label><input id="authOtp" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="000000" required><button type="submit">Verify & login</button></form>
+    <small id="authMessage">New customers are registered automatically after verification.</small>
+  </section>
+  <div class="auth-overlay" id="authOverlay"></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true"><button id="closeDrawer" aria-label="Close">×</button><p class="eyebrow dark">Your bag</p><h2>Selected pieces</h2><div id="bagItems"><p>Your bag is waiting.</p></div><div class="drawer-total"><span>Items</span><strong id="drawerCount">0</strong></div><button class="checkout" type="button">Continue to payment</button></aside>
   <div class="overlay" id="overlay"></div>
+
+  <section class="payment-modal" id="paymentModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+    <button class="payment-close" id="paymentClose" aria-label="Close payment">×</button>
+    <p class="eyebrow dark">MENZO payment</p>
+    <h2 id="paymentTitle">Pay with Google Pay</h2>
+    <p>Open Google Pay and send your order payment to:</p>
+    <div class="payment-number"><span>Google Pay number</span><strong>8867717777</strong></div>
+    <button id="copyPayment" type="button">Copy payment number</button>
+    <button id="paidButton" class="paid-button" type="button">I have paid — continue</button>
+    <form id="orderForm" class="order-form" hidden>
+      <h3>Payment & delivery details</h3>
+      <label for="utrNumber">UTR / transaction number</label>
+      <input id="utrNumber" name="utr" inputmode="numeric" minlength="8" maxlength="22" placeholder="Enter UTR number" required>
+      <label for="paymentProof">Upload payment screenshot</label>
+      <input id="paymentProof" name="proof" type="file" accept="image/png,image/jpeg,image/webp" required>
+      <label for="buyerName">Buyer name</label>
+      <input id="buyerName" name="name" autocomplete="name" placeholder="Full name" required>
+      <label for="buyerPhone">Phone number</label>
+      <input id="buyerPhone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+ ]{10,15}" placeholder="+91 98765 43210" required>
+      <label for="buyerAddress">Full delivery address</label>
+      <textarea id="buyerAddress" name="address" autocomplete="street-address" rows="4" placeholder="House, street, area and locality in Kasaragod" required></textarea>
+      <label for="buyerPincode">Kasaragod PIN code</label>
+      <input id="buyerPincode" name="pincode" inputmode="numeric" pattern="671[0-9]{3}" minlength="6" maxlength="6" placeholder="671121" title="Delivery is available only for Kasaragod PIN codes beginning with 671" required>
+      <small class="delivery-note">Delivery is available only within Kasaragod district (671xxx PIN codes).</small>
+      <button type="submit">Submit order details</button>
+    </form>
+    <small id="paymentMessage">Pay first, then enter the UTR and delivery details.</small>
+  </section>
+  <div class="payment-overlay" id="paymentOverlay"></div>
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

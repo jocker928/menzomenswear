@@ -1,0 +1,4 @@
+window.MENZO_AUTH = {
+  supabaseUrl: "https://uvaaxjqctggczndwqqjv.supabase.co",
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2YWF4anFjdGdnY3puZHdxcWp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUwOTU4MDksImV4cCI6MjEwMDY3MTgwOX0.eBGIyGAWyRTS4SzfRKe2gCemLxtr4G3fhRLZ0THro1A"
+};

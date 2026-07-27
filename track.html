@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track Your Order — MENZO Menswear</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="track-page">
+  <header class="track-header"><a class="brand" href="index.html">MENZO<span>MENSWEAR</span></a><a href="index.html">Continue shopping →</a></header>
+  <main class="track-main">
+    <section class="track-card">
+      <div id="successBanner" class="success-banner" hidden><span>✓</span><div><strong>Your order was saved successfully</strong><p>Keep your order number to track it on this device.</p></div></div>
+      <p class="eyebrow dark">Order tracking</p>
+      <h1>Track your order.</h1>
+      <form id="trackForm"><label for="trackId">Order number</label><div><input id="trackId" placeholder="Example: MZ12345678" required><button type="submit">Track</button></div></form>
+      <div id="trackResult" hidden>
+        <div class="track-summary"><div><span>Order number</span><strong id="orderId"></strong></div><div><span>Order total</span><strong id="orderTotal"></strong></div></div>
+        <ol class="track-steps">
+          <li class="active"><i>1</i><div><strong>Order received</strong><span>Your payment details and address were saved.</span></div></li>
+          <li><i>2</i><div><strong>Payment verification</strong><span>MENZO will verify the UTR and screenshot.</span></div></li>
+          <li><i>3</i><div><strong>Packed</strong><span>Your products are prepared for dispatch.</span></div></li>
+          <li><i>4</i><div><strong>Shipped</strong><span>Your delivery is on the way.</span></div></li>
+          <li><i>5</i><div><strong>Delivered</strong><span>Order completed.</span></div></li>
+        </ol>
+        <div class="track-items"><span>Products</span><p id="orderItems"></p></div>
+      </div>
+      <p id="trackMessage" class="track-message"></p>
+    </section>
+  </main>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const input = document.querySelector("#trackId");
+    const result = document.querySelector("#trackResult");
+    const message = document.querySelector("#trackMessage");
+    function showOrder(id) {
+      const orders = JSON.parse(localStorage.getItem("menzoOrders") || "{}");
+      const order = orders[id];
+      if (!order) {
+        result.hidden = true;
+        message.textContent = "Order not found on this device. Check the order number and try again.";
+        return;
+      }
+      message.textContent = "";
+      result.hidden = false;
+      document.querySelector("#orderId").textContent = order.orderId;
+      document.querySelector("#orderTotal").textContent = `₹${order.total}`;
+      document.querySelector("#orderItems").textContent = order.items.join(", ");
+    }
+    document.querySelector("#trackForm").addEventListener("submit", event => {
+      event.preventDefault();
+      showOrder(input.value.trim().toUpperCase());
+    });
+    const orderId = params.get("order");
+    if (orderId) {
+      input.value = orderId;
+      showOrder(orderId);
+    }
+    if (params.get("success") === "1") document.querySelector("#successBanner").hidden = false;
+  </script>
+</body>
+</html>
