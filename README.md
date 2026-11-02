@@ -12,6 +12,16 @@ python -m http.server 8080
 
 Open `http://localhost:8080`.
 
+## Deploy with GitHub Pages
+
+The `.github/workflows/pages.yml` workflow publishes the static storefront from the repository root.
+
+1. In **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**.
+2. Merge the Pages deployment workflow into `main` (or run it from the Actions tab after merging).
+3. GitHub Pages will publish the site at [https://jocker928.github.io/menzomenswear/](https://jocker928.github.io/menzomenswear/).
+
+The workflow deploys automatically on each push to `main`. To use `www.menzomenswear.com`, configure it as the custom domain in **Settings → Pages** after setting up the domain's DNS records.
+
 ## Deploy to your own Windows server
 
 1. Install IIS and enable the **Static Content** feature.
